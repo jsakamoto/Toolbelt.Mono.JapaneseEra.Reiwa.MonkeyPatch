@@ -1,4 +1,4 @@
-# Toolbelt.Mono.JapaneseEra.Reiwa.MonkeyPatch [![NuGet Package](https://img.shields.io/nuget/v/Toolbelt.Mono.JapaneseEra.Reiwa.MonkeyPatch.svg)](https://www.nuget.org/packages/Toolbelt.Mono.JapaneseEra.Reiwa.MonkeyPatch/)
+# Mono ランタイム用 "令和" 対応モンキーパッチ [![NuGet Package](https://img.shields.io/nuget/v/Toolbelt.Mono.JapaneseEra.Reiwa.MonkeyPatch.svg)](https://www.nuget.org/packages/Toolbelt.Mono.JapaneseEra.Reiwa.MonkeyPatch/)
 
 ## 概要
 

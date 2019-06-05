@@ -14,6 +14,9 @@
     <PackageLicenseExpression>MPL-2.0</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/jsakamoto/Toolbelt.Mono.JapaneseEra.Reiwa.MonkeyPatch</PackageProjectUrl>
     <Description>Client-side Blazor などの Mono ランタイムにおいて、System.Globalization.JapaneseCalendar 実装を書き換え、和暦年号 "令和" を有効にするライブラリです。</Description>
+    <PackageTags>blazor,mono,japanesecalendar,reiwa</PackageTags>
+    <PackageReleaseNotes>v.1.0.0
+- 初回リリース</PackageReleaseNotes>
   </PropertyGroup>
 
 </Project>
