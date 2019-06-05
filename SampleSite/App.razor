@@ -1,0 +1,39 @@
+﻿@using System.Globalization
+
+<div>
+    <input bind-value-oninput="@SourceDateString" />
+</div>
+
+<div>
+    @GetJapaneseEraFormatedString()
+</div>
+
+
+@functions{
+
+    string SourceDateString = DateTime.Today.ToString("yyyy/MM/dd");
+
+    CultureInfo JapaneseCultureInfo;
+
+    protected override void OnInit()
+    {
+        this.JapaneseCultureInfo = new CultureInfo("ja-JP", false);
+        this.JapaneseCultureInfo.DateTimeFormat.Calendar = new JapaneseCalendar();
+    }
+
+    string GetJapaneseEraFormatedString()
+    {
+        try
+        {
+            if (DateTime.TryParseExact(SourceDateString, "yyyy/M/d", null, DateTimeStyles.None, out var date))
+            {
+                return date.ToString("gy'年'M月d日", this.JapaneseCultureInfo);
+            }
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e.ToString());
+        }
+        return "----";
+    }
+}
