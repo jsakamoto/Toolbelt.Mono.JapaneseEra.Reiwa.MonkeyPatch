@@ -4,6 +4,10 @@
 
 Client-side Blazor などの Mono ランタイムにおいて、`System.Globalization.JapaneseCalendar` 実装を書き換え、和暦年号 "令和" を有効にするライブラリです。
 
+このライブラリを使用した、Client-side Blazor によるライブデモを下記 URL で公開しています。
+
+- [https://jsakamoto.github.io/Toolbelt.Mono.JapaneseEra.Reiwa.MonkeyPatch/](https://jsakamoto.github.io/Toolbelt.Mono.JapaneseEra.Reiwa.MonkeyPatch/)
+
 ## 使い方
 
 ### Step.1 - パッケージのインストール
