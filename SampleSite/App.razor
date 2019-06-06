@@ -1,13 +1,18 @@
 ﻿@using System.Globalization
 
-<div>
-    <input bind-value-oninput="@SourceDateString" />
+<div class="row">
+    <label>西暦を入力</label>
+    <span>
+        <input bind-value-oninput="@SourceDateString" />
+    </span>
 </div>
 
-<div>
-    @GetJapaneseEraFormatedString()
+<div class="row">
+    <label>和暦に変換した結果</label>
+    <span>
+        @GetJapaneseEraFormatedString()
+    </span>
 </div>
-
 
 @functions{
 
