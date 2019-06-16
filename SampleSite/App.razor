@@ -3,7 +3,7 @@
 <div class="row">
     <label>西暦を入力</label>
     <span>
-        <input bind-value-oninput="@SourceDateString" />
+        <input @bind-value="@SourceDateString" @bind-value:event="oninput" />
     </span>
 </div>
 
@@ -14,7 +14,7 @@
     </span>
 </div>
 
-@functions{
+@code{
 
     string SourceDateString = DateTime.Today.ToString("yyyy/MM/dd");
 
