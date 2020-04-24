@@ -20,7 +20,7 @@
 
     CultureInfo JapaneseCultureInfo;
 
-    protected override void OnInit()
+    protected override void OnInitialized()
     {
         this.JapaneseCultureInfo = new CultureInfo("ja-JP", false);
         this.JapaneseCultureInfo.DateTimeFormat.Calendar = new JapaneseCalendar();
